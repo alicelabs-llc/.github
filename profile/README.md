@@ -2,85 +2,102 @@
 
 # AliceLabs LLC
 
-**Software & Technology Services**
+**Elite Engineering Hub**  
+**AI Agents • GovTech • LegalTech • Enterprise Security**
 
-AI Agents · SaaS · Web/Mobile · Security Research · GovTech · LegalTech
+[![Website](https://img.shields.io/badge/Website-alicelabs.site-0077cc?style=for-the-badge&logo=world&logoColor=white)](https://alicelabs.site)
+[![Email](https://img.shields.io/badge/Email-contacto%40alicelabs.site-238636?style=for-the-badge&logo=mail&logoColor=white)](mailto:contacto@alicelabs.site)
+[![Location](https://img.shields.io/badge/Wyoming%2C%20USA-2025-111827?style=for-the-badge&logo=flag&logoColor=white)](https://alicelabs.site)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/alicelabs-llc/.github/blob/main/LICENSE)
 
-[![Website](https://img.shields.io/badge/Website-alicelabs.site-0077cc?style=flat-square)](https://alicelabs.site)
-[![Email](https://img.shields.io/badge/Email-contacto%40alicelabs.site-238636?style=flat-square)](mailto:contacto@alicelabs.site)
-[![Location](https://img.shields.io/badge/Location-Wyoming%2C%20USA-lightgrey?style=flat-square)](/)
+---
+
+**Production-grade software for the most demanding environments.**
+
+Construimos herramientas de código abierto y productos enterprise que resuelven problemas reales en contratación federal de EE.UU., legaltech latinoamericano y seguridad de infraestructuras críticas.
 
 </div>
 
----
+## Open Source Toolkit
 
-We build **production-grade software** across five verticals: AI agents, GovTech, SaaS infrastructure, security tooling, and LegalTech. Our open-source work is focused, opinionated, and ships with tests.
-
----
-
-## Open-source toolkit
+Nuestros repositorios están diseñados para **usarse en producción** desde el día uno.
 
 ### GovTech
 
-| Repo | Description | Language |
-|------|-------------|----------|
-| [`samgov-sdk`](https://github.com/alicelabs-llc/samgov-sdk) | TypeScript SDK for the SAM.gov Federal Opportunities API — search, paginate, score | TypeScript |
-| [`sam-gov-types`](https://github.com/alicelabs-llc/sam-gov-types) | Standalone TypeScript types for the SAM.gov API | TypeScript |
-| [`govcon-scoring`](https://github.com/alicelabs-llc/govcon-scoring) | Federal contract viability scoring engine — NAICS, certifications, capabilities | TypeScript |
+| Repository | Description | Language | Status |
+|------------|-------------|----------|--------|
+| [`samgov-sdk`](https://github.com/alicelabs-llc/samgov-sdk) | TypeScript SDK completo para SAM.gov Federal Opportunities API (búsqueda, paginación, scoring) | TypeScript | Production Ready |
+| [`sam-gov-types`](https://github.com/alicelabs-llc/sam-gov-types) | Tipos TypeScript oficiales y mantenidos para la API de SAM.gov | TypeScript | Production Ready |
+| [`govcon-scoring`](https://github.com/alicelabs-llc/govcon-scoring) | Motor de scoring de viabilidad de contratos federales (NAICS, certificaciones, capabilities) | TypeScript | Production Ready |
 
 ### LegalTech
 
-| Repo | Description | Format |
-|------|-------------|--------|
-| [`ecuadorian-legal-codes`](https://github.com/alicelabs-llc/ecuadorian-legal-codes) | 3,847+ articles from COIP, COGEP, CC, CT, CRE, CNJ in machine-readable JSON | JSON |
+| Repository | Description | Format |
+|------------|-------------|--------|
+| [`ecuadorian-legal-codes`](https://github.com/alicelabs-llc/ecuadorian-legal-codes) | +3.847 artículos de COIP, COGEP, CC, CT, CRE y CNJ en JSON listo para IA y sistemas | JSON | Production Ready |
 
-### SaaS / Backend
+### SaaS & Backend
 
-| Repo | Description | Language |
-|------|-------------|----------|
-| [`supabase-rls-templates`](https://github.com/alicelabs-llc/supabase-rls-templates) | Production-ready Row Level Security policies — RBAC, multi-tenant, user isolation | PLpgSQL |
+| Repository | Description | Language |
+|------------|-------------|----------|
+| [`supabase-rls-templates`](https://github.com/alicelabs-llc/supabase-rls-templates) | Políticas Row Level Security production-grade (RBAC, multi-tenant, aislamiento de usuarios) | PLpgSQL | Production Ready |
 
-### Security
+### Security Research
 
-| Repo | Description | Format |
-|------|-------------|--------|
-| [`burp-quicknotes`](https://github.com/alicelabs-llc/burp-quicknotes) | Structured bug bounty report templates for Burp Suite — SSRF, IDOR, XSS, Auth Bypass | Markdown |
-
----
-
-## Products in development
-
-| Product | Vertical | Status |
-|---------|----------|--------|
-| **OpenSAM** | GovTech · AI | Q2 2026 — MVP public |
-| **LexIA** | LegalTech · AI | Q3 2026 — Claude/Gemini-powered legal assistant |
-| **Nexus CRM** | SaaS | Q4 2026 — Production |
-| **ScanTaxes** | FinTech | Q4 2026 — Production |
+| Repository | Description | Format |
+|------------|-------------|--------|
+| [`burp-quicknotes`](https://github.com/alicelabs-llc/burp-quicknotes) | Plantillas estructuradas de reportes de bug bounty para Burp Suite | Markdown | Production Ready |
 
 ---
 
-## Standards we follow
+## Products & Roadmap 2026
 
-Every repo ships with:
+| Product | Vertical | Estado | Lanzamiento |
+|---------|----------|--------|-------------|
+| **OpenSAM** | GovTech + AI | MVP público | Q2 2026 |
+| **LexIA** | LegalTech + AI | Claude/Gemini-powered legal assistant | Q3 2026 |
+| **Nexus CRM** | Enterprise SaaS | Full production | Q4 2026 |
+| **ScanTaxes** | FinTech / GovTech | Full production | Q4 2026 |
 
-- ✅ CI/CD via GitHub Actions (lint → typecheck → test → build → release)
-- ✅ Semantic versioning + automated changelogs
-- ✅ Conventional Commits
-- ✅ `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`
-- ✅ Issue templates and PR templates
-- ✅ MIT license
+---
+
+## Enterprise Standards
+
+**Cada repositorio que publicamos cumple con estándares de clase mundial:**
+
+- ✅ **CI/CD completo** con GitHub Actions (lint → typecheck → test → build → release)
+- ✅ **Semantic Versioning** + changelogs automáticos
+- ✅ **Conventional Commits**
+- ✅ Archivos de seguridad y gobernanza: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`
+- ✅ Issue y PR templates profesionales
+- ✅ MIT License (comercialmente friendly)
+- ✅ Zero Trust mindset y prácticas de seguridad desde el diseño
+
+---
+
+## Why AliceLabs
+
+- **Enfoque hiper-específico**: solo resolvemos problemas complejos en GovTech y LegalTech.
+- **Calidad obsesiva**: código que usamos internamente antes de publicarlo.
+- **Transparencia total**: todo lo que hacemos en open source es real y mantenido.
+- **Fundada en Wyoming, USA** (diciembre 2025) con operaciones técnicas en Latinoamérica.
 
 ---
 
 ## Contributing
 
-We welcome contributions to all public repositories.  
-Start with [`CONTRIBUTING.md`](https://github.com/alicelabs-llc/.github/blob/main/CONTRIBUTING.md) in the org `.github` repo.
+Buscamos colaboradores serios y de alto nivel.  
+Lee nuestras guías antes de abrir un PR o Issue:
+
+→ [CONTRIBUTING.md](https://github.com/alicelabs-llc/.github/blob/main/CONTRIBUTING.md)
 
 ---
 
 <div align="center">
 
-© 2026 AliceLabs LLC &nbsp;·&nbsp; [alicelabs.site](https://alicelabs.site) &nbsp;·&nbsp; [contacto@alicelabs.site](mailto:contacto@alicelabs.site)
+**© 2026 AliceLabs LLC**  
+[alicelabs.site](https://alicelabs.site) • [contacto@alicelabs.site](mailto:contacto@alicelabs.site)
+
+*Building the future of federal contracting and legal intelligence.*
 
 </div>
