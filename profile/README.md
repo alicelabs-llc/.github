@@ -5,7 +5,7 @@
 **Elite Engineering Hub**  
 **AI Agents • GovTech • LegalTech • Enterprise Security**
 
-[![Website](https://img.shields.io/badge/Website-alicelabs.site-0077cc?style=for-the-badge&logo=world&logoColor=white)](https://alicelabs.site)
+[![Website](https://img.shields.io/badge/Website-alicelabs.site-0077cc?style=for-the-badge&logo=world&logoColor=white)](https://www.alicelabs.site/)
 [![Email](https://img.shields.io/badge/Email-contacto%40alicelabs.site-238636?style=for-the-badge&logo=mail&logoColor=white)](mailto:contacto@alicelabs.site)
 [![Location](https://img.shields.io/badge/Wyoming%2C%20USA-2025-111827?style=for-the-badge&logo=flag&logoColor=white)](https://alicelabs.site)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/alicelabs-llc/.github/blob/main/LICENSE)
