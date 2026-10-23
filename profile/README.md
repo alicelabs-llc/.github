@@ -22,7 +22,7 @@ Construimos la infraestructura que responde una sola pregunta: *¿debería permi
 | 03 · auditoría | [**Sentinel**](https://utalabs.tech/sentinel/) | 10 capas estáticas + sandbox real: cada servidor MCP se ejecuta bajo gVisor con syscalls vigiladas 30 s. | 1.211.488 chequeos · 1.030 amenazas cazadas |
 | 04 · ejecución | [**Interceptor**](https://utalabs.tech/interceptor/) | Política en runtime: bloquea `.env` y `rm -rf` aunque la tarjeta del llamador sea válida. | 5 reglas vivas · auditoría JSONL firmada |
 | lado del operador | [**UTA-Shield**](https://wall.utalabs.tech) | Firewall para operadores de servidores MCP: gates de identidad, threat-intel, DLP, metering x402. 19,8 kB, cero dependencias. | [repo](https://github.com/eddyflores100-lang/uta-shield) |
-| registro | [**MarketNow**](https://marketnow.site) | Registro y marketplace: skills, credenciales y dominios verificados en 68.388 servidores MCP indexados. | API MCP gratuita, 9 tools, sin registro · [status](https://status.marketnow.site) |
+| registro | [**MarketNow**](https://marketnow.site) | Infraestructura de seguridad para agentes IA: skills, credenciales y dominios verificados en 71.198 servidores MCP indexados. | API MCP gratuita, 10 tools, sin registro · [status](https://status.marketnow.site) |
 
 Spec canónica del protocolo: [alicelabs-llc/universal-trust-adapter](https://github.com/alicelabs-llc/universal-trust-adapter) — ATC/1.0 + verificador UTA, conformance en un comando (`npx @marketnow/uta-conformance`). Superficie oficial para agentes: [uta-ai](https://github.com/alicelabs-llc/uta-ai).
 
