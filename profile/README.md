@@ -2,102 +2,44 @@
 
 # AliceLabs LLC
 
-**Elite Engineering Hub**  
-**AI Agents • GovTech • LegalTech • Enterprise Security**
+**Trust infrastructure for AI agents. Receipts, not vibes.**
 
-[![Website](https://img.shields.io/badge/Website-alicelabs.site-0077cc?style=for-the-badge&logo=world&logoColor=white)](https://www.alicelabs.site/)
-[![Email](https://img.shields.io/badge/Email-contacto%40alicelabs.site-238636?style=for-the-badge&logo=mail&logoColor=white)](mailto:contacto@alicelabs.site)
-[![Location](https://img.shields.io/badge/Wyoming%2C%20USA-2025-111827?style=for-the-badge&logo=flag&logoColor=white)](https://alicelabs.site)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/alicelabs-llc/.github/blob/main/LICENSE)
-
----
-
-**Production-grade software for the most demanding environments.**
-
-Construimos herramientas de código abierto y productos enterprise que resuelven problemas reales en contratación federal de EE.UU., legaltech latinoamericano y seguridad de infraestructuras críticas.
+[![Stack](https://img.shields.io/badge/stack-utalabs.tech-B08968?style=for-the-badge)](https://utalabs.tech)
+[![Registry](https://img.shields.io/badge/registry-marketnow.site-A16207?style=for-the-badge)](https://marketnow.site)
+[![Company](https://img.shields.io/badge/company-alicelabs.site-6B4F3A?style=for-the-badge)](https://alicelabs.site)
+[![Status](https://img.shields.io/badge/status-status.marketnow.site-5F8D4E?style=for-the-badge)](https://status.marketnow.site)
 
 </div>
 
-## Open Source Toolkit
+Construimos la infraestructura que responde una sola pregunta: *¿debería permitírsele a este agente hacer eso?* Identidad, traducción, auditoría y ejecución — cada afirmación enlaza a un repo, un recibo o una especificación. Sin teatro de seguridad: si la autoridad no responde, el gasto no ocurre (fail-closed).
 
-Nuestros repositorios están diseñados para **usarse en producción** desde el día uno.
+## El stack — utalabs.tech
 
-### GovTech
+| Capa | Producto | Qué es | Prueba |
+|---|---|---|---|
+| 01 · traducción | [**UTA**](https://utalabs.tech/uta/) | 8 formatos de credenciales entran (JWT, W3C VC, A2A, X.509, ATC…), un esquema canónico sale. Verificación de 12 etapas. | [API x402](https://uta-trust-api.eddyflores100.workers.dev) — $0.01/verificación |
+| 02 · identidad | [**ATC**](https://utalabs.tech/atc/) | Tarjeta de capacidades firmada con Ed25519 (ATC/1.0, RFC 8785 JCS). | 57 tarjetas vivas · revocación MNR-CRL-1.0 |
+| 03 · auditoría | [**Sentinel**](https://utalabs.tech/sentinel/) | 10 capas estáticas + sandbox real: cada servidor MCP se ejecuta bajo gVisor con syscalls vigiladas 30 s. | 1.211.488 chequeos · 1.030 amenazas cazadas |
+| 04 · ejecución | [**Interceptor**](https://utalabs.tech/interceptor/) | Política en runtime: bloquea `.env` y `rm -rf` aunque la tarjeta del llamador sea válida. | 5 reglas vivas · auditoría JSONL firmada |
+| lado del operador | [**UTA-Shield**](https://wall.utalabs.tech) | Firewall para operadores de servidores MCP: gates de identidad, threat-intel, DLP, metering x402. 19,8 kB, cero dependencias. | [repo](https://github.com/eddyflores100-lang/uta-shield) |
+| registro | [**MarketNow**](https://marketnow.site) | Registro y marketplace: skills, credenciales y dominios verificados en 68.388 servidores MCP indexados. | API MCP gratuita, 9 tools, sin registro · [status](https://status.marketnow.site) |
 
-| Repository | Description | Language | Status |
-|------------|-------------|----------|--------|
-| [`samgov-sdk`](https://github.com/alicelabs-llc/samgov-sdk) | TypeScript SDK completo para SAM.gov Federal Opportunities API (búsqueda, paginación, scoring) | TypeScript | Production Ready |
-| [`sam-gov-types`](https://github.com/alicelabs-llc/sam-gov-types) | Tipos TypeScript oficiales y mantenidos para la API de SAM.gov | TypeScript | Production Ready |
-| [`govcon-scoring`](https://github.com/alicelabs-llc/govcon-scoring) | Motor de scoring de viabilidad de contratos federales (NAICS, certificaciones, capabilities) | TypeScript | Production Ready |
+Spec canónica del protocolo: [alicelabs-llc/universal-trust-adapter](https://github.com/alicelabs-llc/universal-trust-adapter) — ATC/1.0 + verificador UTA, conformance en un comando (`npx @marketnow/uta-conformance`). Superficie oficial para agentes: [uta-ai](https://github.com/alicelabs-llc/uta-ai).
 
-### LegalTech
+## SLOTH — el agente nocturno que te deja un recibo
 
-| Repository | Description | Format |
-|------------|-------------|--------|
-| [`ecuadorian-legal-codes`](https://github.com/alicelabs-llc/ecuadorian-legal-codes) | +3.847 artículos de COIP, COGEP, CC, CT, CRE y CNJ en JSON listo para IA y sistemas | JSON | Production Ready |
+[**sloth.utalabs.tech**](https://sloth.utalabs.tech) · [repo](https://github.com/eddyflores100-lang/sloth)
 
-### SaaS & Backend
+Un cerebro abierto de 1B (Gemma 3 + llama.cpp) que corre en tu CPU, hace el trabajo aburrido mientras duermes y te entrega un recibo firmado en el desayuno: cadena SHA-256 eslabón por eslabón, firma Ed25519 y verificación completa en tu navegador en ~30 segundos, sin cuenta y sin confiar en nadie. Los clics irreversibles se quedan en manos humanas: anoche rechazó 5 acciones por su cuenta.
 
-| Repository | Description | Language |
-|------------|-------------|----------|
-| [`supabase-rls-templates`](https://github.com/alicelabs-llc/supabase-rls-templates) | Políticas Row Level Security production-grade (RBAC, multi-tenant, aislamiento de usuarios) | PLpgSQL | Production Ready |
+## Código abierto más allá del stack
 
-### Security Research
+- [**alethech**](https://github.com/eddyflores100-lang/alethech) — continuidad verificable de agentes: memoria firmada Ed25519, DAG encadenado, rotación de llaves con garantía de alcanzabilidad. Local-first, cero LLM, cero blockchain. [docs](https://alethech.alicelabs.site)
+- [**security-toolkit**](https://github.com/alicelabs-llc/security-toolkit) — 10 servidores MCP para seguridad de IA/LLM.
+- [**sloptotal**](https://github.com/eddyflores100-lang/sloptotal) — detector de texto IA de código abierto: 23 motores, un puntaje calibrado, cada número medido en un benchmark público. [sloptotal.com](https://sloptotal.com)
+- [**marketnow-memory**](https://github.com/alicelabs-llc/marketnow-memory) — memoria local persistente para cualquier agente compatible con MCP: un solo archivo.
+- [**marketnow-submissions**](https://github.com/alicelabs-llc/marketnow-submissions) — cola pública de submissions: cada skill escaneada por Sentinel, almacenada y auditable.
 
-| Repository | Description | Format |
-|------------|-------------|--------|
-| [`burp-quicknotes`](https://github.com/alicelabs-llc/burp-quicknotes) | Plantillas estructuradas de reportes de bug bounty para Burp Suite | Markdown | Production Ready |
+## Contacto
 
----
-
-## Products & Roadmap 2026
-
-| Product | Vertical | Estado | Lanzamiento |
-|---------|----------|--------|-------------|
-| **OpenSAM** | GovTech + AI | MVP público | Q2 2026 |
-| **LexIA** | LegalTech + AI | Claude/Gemini-powered legal assistant | Q3 2026 |
-| **Nexus CRM** | Enterprise SaaS | Full production | Q4 2026 |
-| **ScanTaxes** | FinTech / GovTech | Full production | Q4 2026 |
-
----
-
-## Enterprise Standards
-
-**Cada repositorio que publicamos cumple con estándares de clase mundial:**
-
-- ✅ **CI/CD completo** con GitHub Actions (lint → typecheck → test → build → release)
-- ✅ **Semantic Versioning** + changelogs automáticos
-- ✅ **Conventional Commits**
-- ✅ Archivos de seguridad y gobernanza: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`
-- ✅ Issue y PR templates profesionales
-- ✅ MIT License (comercialmente friendly)
-- ✅ Zero Trust mindset y prácticas de seguridad desde el diseño
-
----
-
-## Why AliceLabs
-
-- **Enfoque hiper-específico**: solo resolvemos problemas complejos en GovTech y LegalTech.
-- **Calidad obsesiva**: código que usamos internamente antes de publicarlo.
-- **Transparencia total**: todo lo que hacemos en open source es real y mantenido.
-- **Fundada en Wyoming, USA** (diciembre 2025) con operaciones técnicas en Latinoamérica.
-
----
-
-## Contributing
-
-Buscamos colaboradores serios y de alto nivel.  
-Lee nuestras guías antes de abrir un PR o Issue:
-
-→ [CONTRIBUTING.md](https://github.com/alicelabs-llc/.github/blob/main/CONTRIBUTING.md)
-
----
-
-<div align="center">
-
-**© 2026 AliceLabs LLC**  
-[alicelabs.site](https://alicelabs.site) • [contacto@alicelabs.site](mailto:contacto@alicelabs.site)
-
-*Building the future of federal contracting and legal intelligence.*
-
-</div>
+[alicelabs.site](https://alicelabs.site) · contacto@alicelabs.site · Wyoming, USA · Quito, Ecuador
