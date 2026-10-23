@@ -32,10 +32,10 @@ jobs:
           fi
 
       - name: Lint
-        run: if [ -f package.json ]; then npm run lint --if-present; else echo "skip: sin package.json"; fi
+        run: if [ -f package.json ]; then npm run lint --if-present; else echo "skip - sin package.json"; fi
 
       - name: Type check
-        run: if [ -f package.json ]; then npm run typecheck --if-present; else echo "skip: sin package.json"; fi
+        run: if [ -f package.json ]; then npm run typecheck --if-present; else echo "skip - sin package.json"; fi
 
       - name: Test
-        run: if [ -f package.json ]; then npm test --if-present; else echo "skip: sin package.json"; fi
+        run: if [ -f package.json ]; then npm test --if-present; else echo "skip - sin package.json"; fi
