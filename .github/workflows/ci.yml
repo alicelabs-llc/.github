@@ -18,10 +18,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
+      # Este repo es el perfil de la organizacion: no tiene package.json ni
+      # lockfile. Los pasos de Node solo corren si hay proyecto real.
       - name: Install dependencies
-        run: npm ci
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install
+          else
+            echo "Sin package.json — repo de perfil de organización, nada que instalar."
+          fi
 
       - name: Lint
         run: npm run lint --if-present
